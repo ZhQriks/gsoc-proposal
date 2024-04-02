@@ -1,3 +1,5 @@
+## 📅 Releases Working Group Calendar Website
+
 - Name: Daulet Zharassar
 - Email: dauletjarasar@gmail.com
 - Github: [ZhQriks](https://github.com/zhqriks)
@@ -22,30 +24,31 @@ For 1.5 years I've been working at Owl Tribe outsourcing company where I've work
 
 
 **Diagram**
-==
-![electron-diagram](https://github.com/ZhQriks/gsoc-proposal/assets/49629027/f23a86f4-0adb-4dd4-9aa8-8c4165756545)
+=====================
+![electron-diagram](https://github.com/ZhQriks/gsoc-proposal/assets/49629027/d0148844-fa7d-411c-b124-72489d9e3205)
+
 
 A simple diagram describing my vision of process integration for this project
 
 ## Deliverables:
 
-1. React website to monitor team beta and stable release dates:
+1. ### React website to monitor team beta and stable release dates:
    - Prerequisites for the project
    - Receiving data from the express server
    - Coding a custom component for a calendar
    - Style the components using CSS
 
-2. Express server modifications:
+2. ### Express server modifications:
    - Fetching release data from the Chromium API
    - Storage of fetched data
    - Implement data syncing with the Slack
    - Endpoints for the React website
 
-3. Documentation for **Releases Working Group Calendar**:
+3. ### Documentation for **Releases Working Group Calendar**:
    - Create user guides for the React website, explaining how to navigate and use the features
    - Provide documentation for the Slack bot, including instructions on how to install and use the bot
 
-4. Slack Bot
+4. ### Slack Bot
    - Notifications of new calendar changes in slack
    - Interactive commands for manual change of information
    - Interaction with express
@@ -56,7 +59,7 @@ A simple diagram describing my vision of process integration for this project
 The React website will provide a user-friendly interface for monitoring release dates, while the modified Express server will handle data fetching and syncing. The Slack bot integration will enable seamless notifications and interactive commands, making collaboration and communication better within the Releases Working Group.
 
 
-1. **Creating a React Calendar Website**
+1. ### Creating a React Calendar Website
    - **Problem:** The Releases Working Group needs a user-friendly website to monitor team beta and stable release dates.
    - **Solution:**
      - Typescript initialization
@@ -65,10 +68,12 @@ The React website will provide a user-friendly interface for monitoring release 
      - Implement a custom `<Calendar {...} />` component to display release dates and events.
      - Style the components using CSS to ensure an attractive and intuitive user interface.
 
-2. **Express Server Modifications**
+2. ### Express Server Modifications
    - **Problem:** The existing electron-release Express server needs to be modified to fetch and store release data from the Chromium API and sync with Slack.
    - **Solution:**
      - Modify the Express server to fetch release updates from the Chromium API on a scheduled basis.
+       - Use a library like node-cron to create a non-blocking synchronous task.
+       - Define the schedule for the task (e.g., every hour, every day at a specific time). 
      - Implement data storage functionality to store the fetched release data.
      - Develop endpoints for the React website to access the stored release data.
      - Integrate data syncing functionality with Slack using the Slack API.
@@ -77,7 +82,7 @@ The React website will provide a user-friendly interface for monitoring release 
        - Implement functions to send release data updates to the **#wg-releases** Slack channel.
        - Set up a scheduled task or trigger to automatically sync release data with Slack at regular intervals.
 
-3. **Slack Bot Integration**
+3. ### Slack Bot Integration
    - **Problem:** The Releases Working Group needs a Slack bot to provide notifications and interact with the release data.
    - **Solution:**
      - Create and configure a Slack bot using the Slack API and obtain an API token.
@@ -126,6 +131,6 @@ The React website will provide a user-friendly interface for monitoring release 
 
 **Why me**
 =====================
-I alone became a developer at the early age of 15.  During this time I found an unrivaled passion for programming. I like to understand complex concepts and do the work quickly to get more feedback
+I self-taught became a developer at the early age of 15.  During this time I found an unrivaled passion for programming. I like to understand complex concepts and do the work quickly to get more feedback
 
 When I was 15 years old and entered the Desktop Application Contest as a Web Developer, my eyes fell on Electron and when I entered the contest I transferred my project to desktop in just 5 minutes. Since that day I still find Electron to be magical and empowering for thousands of web developers

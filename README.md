@@ -74,7 +74,7 @@ The React website will provide a user-friendly interface for monitoring release 
      - Integrate data syncing functionality with Slack using the Slack API.
        - Use the `@slack/web-api` library to interact with the Slack API.
        - Authenticate the Express server with the Slack API using the obtained API token.
-       - Implement functions to send release data updates to the designated Slack channel(s).
+       - Implement functions to send release data updates to the **#wg-releases** Slack channel.
        - Set up a scheduled task or trigger to automatically sync release data with Slack at regular intervals.
 
 3. **Slack Bot Integration**
@@ -82,7 +82,7 @@ The React website will provide a user-friendly interface for monitoring release 
    - **Solution:**
      - Create and configure a Slack bot using the Slack API and obtain an API token.
      - Integrate the Slack bot within the Express app, likely within the existing electron-release repository.
-     - Implement functionality for the Slack bot to notify channels or a specific channel when a new release is fetched using the `@slack/events-api` library.
+     - Implement functionality for the Slack bot to notify **#wg-releases** Slack channel when a new release is fetched using the `@slack/events-api` library.
      - Develop interactive commands for the Slack bot using the Block Kit UI Framework, allowing users to:
        - List releases
        - Show the latest release

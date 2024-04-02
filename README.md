@@ -1,5 +1,3 @@
-**Personal Information**
-=====================
 - Name: Daulet Zharassar
 - Email: dauletjarasar@gmail.com
 - Github: [ZhQriks](https://github.com/zhqriks)
@@ -20,9 +18,38 @@
 =====================
 Hi I am Zharasar from Kazakhstan, This year I am finishing 12th grade in high school. My main programming language is Javascript. I started at the age of 15 by creating simple applications interacting with DOM. Now at the age of 18 I develop complex projects using React & Typescript.
 
-For 1.5 years I've been working at Owl Tribe outsourcing company where I've worked on 5+ projects including Electron, React-Native, Nextjs, Django. I love to participate in coding competitions, and have already won 10 hackathons. My latest project is Nodemap - AI Roadmap Generator. [Link](https://nodemap.vercel.app).
+For 1.5 years I've been working at Owl Tribe outsourcing company where I've worked on 5+ projects including Electron, React-Native, Nextjs, Django. I enjoy to participate in coding competitions, and have already won 10 hackathons. My latest project is Nodemap - AI Roadmap Generator. [Link](https://nodemap.vercel.app).
 
-**Homework**
+
+**Diagram**
+==
+![electron-diagram](https://github.com/ZhQriks/gsoc-proposal/assets/49629027/f23a86f4-0adb-4dd4-9aa8-8c4165756545)
+
+A simple diagram describing my vision of process integration for this project
+
+## Deliverables:
+
+1. React website to monitor team beta and stable release dates:
+   - Prerequisites for the project
+   - Receiving data from the express server
+   - Coding a custom component for a calendar
+   - Style the components using CSS
+
+2. Express server modifications:
+   - Fetching release data from the Chromium API
+   - Storage of fetched data
+   - Implement data syncing with the Slack
+   - Endpoints for the React website
+
+3. Documentation for **Releases Working Group Calendar**:
+   - Create user guides for the React website, explaining how to navigate and use the features
+   - Provide documentation for the Slack bot, including instructions on how to install and use the bot
+
+4. Slack Bot
+   - Notifications of new calendar changes in slack
+   - Interactive commands for manual change of information
+   - Interaction with express
+
 
 **Plan**
 =====================
